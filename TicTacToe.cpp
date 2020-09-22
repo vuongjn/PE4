@@ -38,7 +38,7 @@ class TicTacToe
         }
 
         turnCount_++;
-}
+    }
     int GetPlayerChoice(){
 		int input =0;
 		int foo[2];
@@ -52,8 +52,18 @@ class TicTacToe
     }
 };
 
-int main(){
-	TicTacToe toe;
-	toe.GetPlayerChoice();
-	return 0;
+int main()
+{
+  TicTacToe *game = new TicTacToe();
+  game->CreateBoard();
+  game->DisplayBoard();
+
+  for (int i = 0; i < 9; i++)
+  {
+    int arr[2] = {0, 0}; 
+    int arr = game->GetPlayerChoice();
+    game->PlaceMarker(arr);
+    game->DisplayBoard();
+  }
+
 }
