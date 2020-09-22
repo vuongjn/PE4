@@ -23,4 +23,10 @@ class TicTacToe
           std::cout<<std::endl;
       }
     }
+    std::string GetPlayerChoice(){
+      std::string input ="";
+      std::cout<< "What move you wanna make foo? in x,y format" << endl;
+      cin << input;
+      return input;
+    }
 };
