@@ -39,16 +39,17 @@ class TicTacToe
 
         turnCount_++;
     }
-    int GetPlayerChoice(){
-		int input =0;
-		int foo[2];
+    int* GetPlayerChoice(){
+		int row;
+		int col;
 		std::cout<< "What x move do you want to make?" << std::endl;
-		std::cin >> input;
-		foo[0]= input;
+		std::cin >> row;
 		std::cout<< "What y move do you want to make?" << std::endl;
-		std::cin >> input;
-		foo[1]= input;
-		return input;
+		std::cin >> col;
+		int* input = new int[2];
+		input[0] = row;
+        input[1] = col;
+        return input;
     }
 };
 
@@ -60,8 +61,7 @@ int main()
 
   for (int i = 0; i < 9; i++)
   {
-    int arr[2] = {0, 0}; 
-    int arr = game->GetPlayerChoice();
+    int* arr = game->GetPlayerChoice();
     game->PlaceMarker(arr);
     game->DisplayBoard();
   }
