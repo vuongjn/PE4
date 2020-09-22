@@ -1,0 +1,66 @@
+_ _ _
+_ _ _
+_ _ _
+What x move do you want to make?
+1
+What y move do you want to make?
+1
+_ _ _
+_ X _
+_ _ _
+What x move do you want to make?
+0
+What y move do you want to make?
+0
+O _ _
+_ X _
+_ _ _
+What x move do you want to make?
+2
+What y move do you want to make?
+0
+O _ _
+_ X _
+X _ _
+What x move do you want to make?
+0
+What y move do you want to make?
+2
+O _ O
+_ X _
+X _ _
+What x move do you want to make?
+0
+What y move do you want to make?
+1
+O X O
+_ X _
+X _ _
+What x move do you want to make?
+2
+What y move do you want to make?
+1
+O X O
+_ X _
+X O _
+What x move do you want to make?
+1
+What y move do you want to make?
+0
+O X O
+X X _
+X O _
+What x move do you want to make?
+1
+What y move do you want to make?
+2
+O X O
+X X O
+X O _
+What x move do you want to make?
+2
+What y move do you want to make?
+2
+O X O
+X X O
+X O X
