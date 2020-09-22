@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class TicTacToe
 {
@@ -23,4 +24,21 @@ class TicTacToe
           std::cout<<std::endl;
       }
     }
+    int GetPlayerChoice(){
+		int input =0;
+		int foo[2];
+		std::cout<< "What x move do you want to make?" << std::endl;
+		std::cin >> input;
+		foo[0]= input;
+		std::cout<< "What y move do you want to make?" << std::endl;
+		std::cin >> input;
+		foo[1]= input;
+		return input;
+    }
 };
+
+int main(){
+	TicTacToe toe;
+	toe.GetPlayerChoice();
+	return 0;
+}
