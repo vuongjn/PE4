@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class TicTacToe
 {
@@ -22,5 +23,20 @@ class TicTacToe
           }
           std::cout<<std::endl;
       }
+    }
+
+    void PlaceMarker(int input[]){
+        int row = input[0];
+        int col = input[1];
+
+        if(turnCount_ % 2 == 0){
+            board_[row][col] = "X";
+        }
+
+        else{
+            board_[row][col] ="O";
+        }
+
+        turnCount_++;
     }
 };
